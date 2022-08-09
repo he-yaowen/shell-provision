@@ -47,3 +47,7 @@ module_cygwin_lua() {
     echo 'export PATH="$HOME/.luaenv/bin:$PATH"' >> "$SHELL_PROFILE"
     echo 'eval "$(luaenv init -)"' >> "$SHELL_PROFILE"
 }
+
+module_cygwin_php() {
+       apt-cyg install php php-{ctype,curl,devel,fileinfo,gd,gettext,iconv,json,mbstring,pdo_mysql,pdo_sqlite,phar,simplexml,tokenizer,xmlreader,xmlwriter}
+}
