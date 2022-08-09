@@ -1,1 +1,3 @@
-modules=(dotfiles cygwin_init)
+modules=(dotfiles cygwin_init cygwin_apt-cyg)
+
+cygwin_mirror_url=
