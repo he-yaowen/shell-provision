@@ -51,3 +51,9 @@ module_cygwin_lua() {
 module_cygwin_php() {
        apt-cyg install php php-{ctype,curl,devel,fileinfo,gd,gettext,iconv,json,mbstring,pdo_mysql,pdo_sqlite,phar,simplexml,tokenizer,xmlreader,xmlwriter}
 }
+
+module_cygwin_misc() {
+       apt-cyg install vim bash-completion dos2unix fdupes
+
+       ln -sf /usr/bin/vim.exe /usr/local/bin/vi
+}
