@@ -21,3 +21,29 @@ module_cygwin_python() {
     ln -sf /usr/bin/python3.9.exe /usr/bin/python
     ln -sf /usr/bin/pip3.9 /usr/bin/pip
 }
+
+module_cygwin_lua() {
+    apt-cyg install gcc-core make lua liblua-devel liblua5.3 unzip
+
+    # luarocks
+    ln -sf /usr/lib/liblua5.3.dll.a /usr/lib/liblua.a
+    ln -sf /usr/include/lua5.3 /usr/include/lua
+
+    curl https://luarocks.org/releases/luarocks-3.9.2.tar.gz -o /tmp/luarocks-3.9.2.tar.gz
+
+    cd /tmp/
+    tar xf luarocks-3.9.2.tar.gz
+    cd luarocks-3.9.2
+    ./configure
+    make
+    make install
+
+    # luaenv
+    git clone https://github.com/cehoffman/luaenv.git ~/.luaenv
+    cd ~/.luaenv
+
+    git clone https://github.com/cehoffman/lua-build.git ~/.luaenv/plugins/lua-build
+
+    echo 'export PATH="$HOME/.luaenv/bin:$PATH"' >> "$SHELL_PROFILE"
+    echo 'eval "$(luaenv init -)"' >> "$SHELL_PROFILE"
+}

@@ -4,6 +4,15 @@ if [[ $OSTYPE == "darwin"* ]]; then
     OSTYPE=darwin
 fi
 
+case $(basename "$SHELL") in
+    bash)
+        SHELL_PROFILE="$HOME/.bashrc"
+        ;;
+    zsh)
+        SHELL_PROFILE="$HOME/.zshrc"
+        ;;
+esac
+
 exit_fatal() {
     echo "fatal: $1" >&2
     exit 1
