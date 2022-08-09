@@ -14,3 +14,10 @@ module_cygwin_apt-cyg() {
     apt-cyg cache /var/cache/cygwin
     apt-cyg mirror $cygwin_mirror_url
 }
+
+module_cygwin_python() {
+    apt-cyg install python39 python39-devel python39-pip
+    ln -sf /usr/bin/python3.9.exe /usr/bin/python3
+    ln -sf /usr/bin/python3.9.exe /usr/bin/python
+    ln -sf /usr/bin/pip3.9 /usr/bin/pip
+}
