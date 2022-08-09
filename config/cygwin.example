@@ -1,3 +1,5 @@
-modules=(dotfiles cygwin_init cygwin_apt-cyg cygwin_python)
+modules=(dotfiles cygwin_init cygwin_apt-cyg cygwin_python python_pkgs)
 
 cygwin_mirror_url=
+
+python_pip=pip

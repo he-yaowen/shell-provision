@@ -5,3 +5,7 @@ module_dotfiles() {
 
     ./install.sh
 }
+
+module_python_pkgs() {
+    "$python_pip" install virtualenv poetry pdm cookiecutter git-timemachine gitflux
+}
