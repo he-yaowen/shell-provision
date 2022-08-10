@@ -1,0 +1,7 @@
+modules=(
+    dotfiles
+    python_pkgs
+    oh-my-zsh
+    powerline-fonts
+    nvm
+)
