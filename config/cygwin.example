@@ -1,4 +1,14 @@
-modules=(dotfiles cygwin_init cygwin_apt-cyg cygwin_python python_pkgs cygwin_lua cygwin_php cygwin_misc)
+modules=(
+    dotfiles
+    cygwin_init
+    cygwin_apt-cyg
+    cygwin_python
+    python_pkgs
+    cygwin_lua
+    cygwin_php
+    cygwin_misc
+    oh-my-zsh
+)
 
 cygwin_mirror_url=
 

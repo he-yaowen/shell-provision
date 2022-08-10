@@ -53,7 +53,7 @@ module_cygwin_php() {
 }
 
 module_cygwin_misc() {
-       apt-cyg install vim bash-completion dos2unix fdupes
+       apt-cyg install vim bash-completion dos2unix fdupes zsh
 
        ln -sf /usr/bin/vim.exe /usr/local/bin/vi
 }
