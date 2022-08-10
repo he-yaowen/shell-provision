@@ -9,6 +9,7 @@ modules=(
     cygwin_misc
     oh-my-zsh
     powerline-fonts
+    nvm
 )
 
 cygwin_mirror_url=
