@@ -8,6 +8,7 @@ modules=(
     cygwin_php
     cygwin_misc
     oh-my-zsh
+    powerline-fonts
 )
 
 cygwin_mirror_url=
