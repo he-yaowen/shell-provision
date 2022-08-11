@@ -1,5 +1,6 @@
 modules=(
     darwin_brew
+    darwin_pkgs
     dotfiles
     python_pkgs
     oh-my-zsh
