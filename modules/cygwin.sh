@@ -20,6 +20,8 @@ module_cygwin_python() {
     ln -sf /usr/bin/python3.9.exe /usr/bin/python3
     ln -sf /usr/bin/python3.9.exe /usr/bin/python
     ln -sf /usr/bin/pip3.9 /usr/bin/pip
+
+    /usr/bin/python3.9.exe -m pip install --upgrade pip
 }
 
 module_cygwin_lua() {

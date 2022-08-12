@@ -14,4 +14,4 @@ modules=(
 
 cygwin_mirror_url=
 
-python_pip=pip
+python_pip=/usr/local/bin/pip3
