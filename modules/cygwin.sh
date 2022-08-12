@@ -31,7 +31,7 @@ module_cygwin_lua() {
     ln -sf /usr/lib/liblua5.3.dll.a /usr/lib/liblua.a
     ln -sf /usr/include/lua5.3 /usr/include/lua
 
-    curl https://luarocks.org/releases/luarocks-3.9.2.tar.gz -o /tmp/luarocks-3.9.2.tar.gz
+    curl https://luarocks.github.io/luarocks/releases/luarocks-3.9.2.tar.gz -o /tmp/luarocks-3.9.2.tar.gz
 
     cd /tmp/
     tar xf luarocks-3.9.2.tar.gz
