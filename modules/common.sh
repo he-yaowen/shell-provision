@@ -19,7 +19,7 @@ module_powerline-fonts() {
     git clone https://github.com/powerline/fonts.git "$HOME"/.local/shprov/fonts
 
     if [[ $OSTYPE == "cygwin" ]]; then
-        powershell ./install.ps1
+        echo "Run '/usr/.local/fonts/install.ps1' manually in PowerShell"
     else
         ./install.sh
     fi
