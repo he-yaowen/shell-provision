@@ -7,7 +7,7 @@ module_dotfiles() {
 }
 
 module_python_pkgs() {
-    "$python_pip" install virtualenv poetry pdm cookiecutter git-timemachine gitflux
+    "$python_pip" install setuptools virtualenv poetry pdm cookiecutter git-timemachine gitflux
 }
 
 module_oh-my-zsh() {
